@@ -19,19 +19,19 @@ WordPress becomes accessible via a public IP assigned to ECS tasks.
 
 ## Project Structure
 
-terraform-project/
-├── terraform.tf          # Provider, version, S3 backend
-├── main.tf               # Connects all modules together
-├── variables.tf          # Root variables
-├── outputs.tf            # Exposed outputs (VPC ID, ECR URI, RDS endpoint)
-├── terraform.tfvars      # User-supplied values
-└── modules/
-     ├── vpc/
-     ├── sg/
-     ├── ecr/
-     ├── rds/
-     ├── task_definition/
-     └── ecs/
+    terraform-project/
+    ├── terraform.tf          # Provider, version, S3 backend
+    ├── main.tf               # Connects all modules together
+    ├── variables.tf          # Root variables
+    ├── outputs.tf            # Exposed outputs (VPC ID, ECR URI, RDS endpoint)
+    ├── terraform.tfvars      # User-supplied values
+    └── modules/
+        ├── vpc/
+        ├── sg/
+        ├── ecr/
+        ├── rds/
+        ├── task_definition/
+        └── ecs/
 
 ## Architecture Diagram
 
